@@ -12,7 +12,7 @@ Includes:
 - Tests: unit test for business logic and integration test using TestClient
 - Dockerfile and requirements.txt
 
-## Run locally
+## Run
 1. Create virtualenv and install:
 ```bash
 python -m venv .venv
@@ -20,8 +20,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 2. Create .env file with variables defined in sample.env file
-
-2. Run the app:
+3. Run migration using alembic
+4. Run the app:
 ```bash
 uvicorn main:app --reload
 ```
