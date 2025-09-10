@@ -21,6 +21,11 @@ pip install -r requirements.txt
 ```
 2. Create .env file with variables defined in sample.env file
 3. Run migration using alembic
+```bash
+alembic revision --autogenerate -m "create items table"
+alembic upgrade head
+```
+
 4. Run the app:
 ```bash
 uvicorn main:app --reload
