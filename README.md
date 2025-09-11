@@ -32,7 +32,7 @@ uvicorn main:app --reload
 ```
 API available at `http://127.0.0.1:8000`.
 
-3. Run tests:
+5. Run tests:
 ```bash
 PYTHONPATH=. pytest -q
 ```
